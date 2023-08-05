@@ -3,7 +3,7 @@
 import axios from "axios";
 import * as z from "zod";
 
-import Heading from "@/components/Heading";
+import { Heading } from "@/components/Heading";
 import { VideoIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";

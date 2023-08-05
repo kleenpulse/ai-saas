@@ -135,12 +135,12 @@ const CodePage = () => {
 											</div>
 										),
 										code: ({ node, ...props }) => (
-											<code {...props} className="bg-black/10 p-1 rounded-lg" />
+											<code className="bg-black/10 p-1 rounded-lg" {...props} />
 										),
 									}}
 									className="text-sm overflow-hidden leading-7"
 								>
-									{message.content || []}
+									{message.content || ""}
 								</ReactMarkdown>
 							</div>
 						))}
