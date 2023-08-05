@@ -29,7 +29,6 @@ export const amountOptions = [
 		value: "5",
 		label: "5 Photos",
 	},
-	,
 ];
 
 export const resolutionOptions = [
