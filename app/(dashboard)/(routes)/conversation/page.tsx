@@ -119,14 +119,16 @@ const CoversationPage = () => {
 							<div
 								key={message.content}
 								className={cn(
-									"p-8 w-full flex items-start gap-x-8 rounded-lg",
+									" min-h-[20px] whitespace-pre-wrap p-8 w-full flex items-start gap-x-8 rounded-lg",
 									message.role === "user"
 										? "bg-white border border-black/10"
 										: "bg-muted"
 								)}
 							>
 								{message.role === "user" ? <UserAvatar /> : <BotAvatar />}
-								<p className="text-sm">`{message.content}</p>
+								<div className="break-words">
+									<p className="text-sm">`{message.content}</p>
+								</div>
 							</div>
 						))}
 					</div>
